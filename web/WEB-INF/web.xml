@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>FirstServlet</servlet-name>
+        <servlet-class>FirstServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FirstServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>MainJsp</servlet-name>
+        <jsp-file>/MainJsp.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MainJsp</servlet-name>
+        <url-pattern>/main</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Room1Jsp</servlet-name>
+        <jsp-file>/Room1.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Room1Jsp</servlet-name>
+        <url-pattern>/room1</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Room2Jsp</servlet-name>
+        <jsp-file>/Room2.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Room2Jsp</servlet-name>
+        <url-pattern>/room2</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Room3Jsp</servlet-name>
+        <jsp-file>/Room3.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Room3Jsp</servlet-name>
+        <url-pattern>/room3</url-pattern>
+    </servlet-mapping>
+    <listener>
+        <listener-class>FirstServlet</listener-class>
+    </listener>
+
+
+</web-app>
